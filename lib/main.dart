@@ -5,6 +5,7 @@ import 'package:sanika/Pages/Dialog_Box.dart';
 import 'package:sanika/Pages/DropDownButton.dart';
 import 'package:sanika/Pages/Login_TextField.dart';
 import 'package:sanika/Pages/TextField.dart';
+import 'package:sanika/Pages/TextFieldDemo.dart';
 import 'package:sanika/Pages/iconWatch.dart';
 
 import 'Pages/BeautyMaster.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context)
   {
     return MaterialApp(
-      home:  Dialogbox(),
+      home:  TextFieldDemo(),
     );
   }
 }
