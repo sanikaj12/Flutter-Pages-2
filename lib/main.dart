@@ -1,14 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sanika/Pages/CardWidget.dart';
-import 'package:sanika/Pages/BeautyMaster.dart';
-import 'package:sanika/Pages/Dialog_Box.dart';
-import 'package:sanika/Pages/DropDownButton.dart';
-import 'package:sanika/Pages/Login_TextField.dart';
-import 'package:sanika/Pages/TextField.dart';
-import 'package:sanika/Pages/TextFieldDemo.dart';
-import 'package:sanika/Pages/iconWatch.dart';
+import 'package:sanika/Pages/DropDownButton2.dart';
+import 'package:sanika/Pages/ListView%20and%20ListTile.dart';
 
-import 'Pages/BeautyMaster.dart';
 void main()
 {
   runApp(const MyApp());
@@ -21,7 +14,7 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context)
   {
     return MaterialApp(
-      home:  TextFieldDemo(),
+      home:  ContactList(),
     );
   }
 }

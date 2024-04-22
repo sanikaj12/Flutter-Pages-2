@@ -1,32 +1,14 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
-}
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter DropDownButton',
-      theme: ThemeData(
-        primarySwatch: Colors.green,
-      ),
-      home: const MyHomePage(),
-      debugShowCheckedModeBanner: false,
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({Key? key}) : super(key: key);
+class DropDownButton extends StatefulWidget {
+  const DropDownButton({Key? key}) : super(key: key);
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _DropDownButton createState() => _DropDownButton();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _DropDownButton extends State<DropDownButton> {
 
   // Initial Selected Value
   String dropdownvalue = 'India';
@@ -54,15 +36,12 @@ class _MyHomePageState extends State<MyHomePage> {
               // Down Arrow Icon
               icon: const Icon(Icons.arrow_downward_rounded),
 
-              // Array list of items
               items: countries.map((String items) {
                 return DropdownMenuItem(
                   value: items,
                   child: Text(items),
                 );
               }).toList(),
-              // After selecting the desired option,it will
-              // change button value to selected value
               onChanged: (String? newValue) {
                 setState(() {
                   dropdownvalue = newValue!;
