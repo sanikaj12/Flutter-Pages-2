@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sanika/Pages/DropDownButton2.dart';
-import 'package:sanika/Pages/ListView%20and%20ListTile.dart';
+import 'package:sanika/Pages/BottomNavigationBar.dart';
+import 'Pages/Snackbar_and_AlertDialog.dart';
 
 void main()
 {
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context)
   {
     return MaterialApp(
-      home:  ContactList(),
+      home:  BottomNavigator(),
     );
   }
 }
